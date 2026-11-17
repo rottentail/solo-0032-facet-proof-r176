@@ -1,0 +1,25 @@
+{
+  "objects": {
+    "1": {
+      "key": "a-upper",
+      "mesh_id": "mesh_53fc47772e6b4c03a9fc3b269711fc3c",
+      "pigment_id": "pigment_92f073a9f71c4cc3beb7a6921cb4ac3e"
+    },
+    "2": {
+      "key": "b-lower",
+      "mesh_id": "mesh_53fc47772e6b4c03a9fc3b269711fc3c",
+      "pigment_id": "pigment_92f073a9f71c4cc3beb7a6921cb4ac3e"
+    }
+  },
+  "pass_sha256": {
+    "color.png": "1148d00b0fa1ed4938dd93447e4fe7c1ee691fc3f0ea24be64c8feca519ef9db",
+    "color.rgb": "ff3fdfaea1c2cb8100cb41f2d38d1e2ae9fcdde4d7a58bae4202e810cf788a5b",
+    "depth.f32": "76b52ef76c1393c7d67d39b7e2fb16fa5eb4d7eed6adaf6dfcdf2e1b1a0f55e1",
+    "depth.png": "1f952004592c6b0fe5f62c000049a782684535db2f605be913246dccb0c2ddb1",
+    "object.png": "195713a7abf09b0a2b568dfaa70b24a92b5a5f8d6d466daecdd1566541601db8",
+    "object.u32": "c78196e0b66f106ba68bbe54898b3dfe9bba21c3fc1d5b2b85debbf34981d34b"
+  },
+  "plate_id": "plate_baf57677aa7a456bbf5e4b4d1d804b9c",
+  "seal_id": "seal_3bb8ccffbcda42d9b3a8331202e4ff97",
+  "visual_hash": "10f5277275d8e5606838ebd237b9f8e1bceb1a7240b25f4620d799746ee71a6f"
+}

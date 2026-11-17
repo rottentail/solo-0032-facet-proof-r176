@@ -1,0 +1,55 @@
+{
+  "channel_compare": {
+    "both": 4,
+    "color_changed": 4,
+    "color_only": 0,
+    "coverage_gained": 0,
+    "coverage_lost": 0,
+    "depth_bit_differences": 0,
+    "depth_changed_finite": 0,
+    "ownership_changed": 340,
+    "ownership_only": 336,
+    "pixels": 2304
+  },
+  "depth_delta": {
+    "finite_pairs": 400,
+    "maximum": 0.0,
+    "mean": 0.0,
+    "pixels_over_1e-6": 0
+  },
+  "left": "left",
+  "left_objects": {
+    "1": "a-lower",
+    "2": "b-upper"
+  },
+  "left_visual_hash": "aea816c5f66b06957d99c28b09e0b71a0b4e61fe75d720cd61a912c710a9d3a3",
+  "note": "Color and depth are effectively identical; the object channel moved owner. The service comparison endpoint below does not read the object channel.",
+  "ownership_transitions": {
+    "2->1": 340
+  },
+  "question": "两块几何、材质与镜头完全相同，只交换放置键的顺序；颜色和深度几乎不变，但谁拥有像素会不会变？服务自带的比对能报告这件事吗？",
+  "right": "right",
+  "right_objects": {
+    "1": "a-upper",
+    "2": "b-lower"
+  },
+  "right_visual_hash": "10f5277275d8e5606838ebd237b9f8e1bceb1a7240b25f4620d799746ee71a6f",
+  "scenario": "key-order",
+  "seal_hashes_differ": true,
+  "service_comparison_payload": {
+    "color_changed": 0,
+    "depth_changed": 0,
+    "left": "plate_88a5eb0a53ae43aca6cc3558a7b365fa",
+    "maximum_depth_delta": 0.0,
+    "mean_channel_delta": 0.0023148148148148147,
+    "pass_hashes": {
+      "left": "aea816c5f66b06957d99c28b09e0b71a0b4e61fe75d720cd61a912c710a9d3a3",
+      "right": "10f5277275d8e5606838ebd237b9f8e1bceb1a7240b25f4620d799746ee71a6f"
+    },
+    "pixels": 2304,
+    "right": "plate_baf57677aa7a456bbf5e4b4d1d804b9c",
+    "silhouette_changed": 0,
+    "tolerance": 2.0
+  },
+  "title": "Placement key order / 键序与归属"
+}

@@ -1,0 +1,484 @@
+{
+  "arms": {
+    "average-edge-color": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 252,
+        "color_only": 0,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "average",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "direct-edges": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "direct",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "divide-barycentrics": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "divide",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "narrow-tie-window": {
+      "against_service": {
+        "both": 4,
+        "color_changed": 332,
+        "color_only": 328,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 4,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 7015,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 1e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "1->2": 4
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "perspective-depth": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "perspective",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "reject-near-faces": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "reject",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "research": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "covered_pixels": 1600,
+      "depth_delta_against_service": {
+        "finite_pairs": 1600,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 6084,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 256,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 5988,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {
+        "2->1": 252
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 1600,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    }
+  },
+  "input_digest": "929222e1d0d85d43a4c27f1b17316aaf030324eaaf5fdcf02e8b01fdcc2db8e9",
+  "oracle_service": {
+    "aggregate_disagreements": 156,
+    "agrees": true,
+    "ambiguous_pixels": 256,
+    "ambiguous_window": 1e-07,
+    "checked_pixels": 5988,
+    "depth_mismatch_count": 0,
+    "depth_mismatches": [],
+    "depth_relative_tolerance": 1e-06,
+    "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+    "ownership_mismatch_count": 0,
+    "ownership_mismatches": []
+  },
+  "preview_consistency": {
+    "color_png_matches_raw": true,
+    "consistent": true,
+    "depth_png_mismatches": 0,
+    "object_png_mismatches": 0
+  },
+  "probe": {
+    "description": "部件重叠的核心窗口；只比较归属通道与深度，不用颜色推断谁在前",
+    "kind": "box",
+    "x_end": 44,
+    "x_start": 36,
+    "y_end": 44,
+    "y_start": 36
+  },
+  "question": "当两个部件在同一深度相遇时，谁获得像素是颜色差异还是归属差异？数值后端改变累加顺序后归属是否漂移？",
+  "scenario": "coplanar-ownership",
+  "self_consistency": {
+    "consistent": true,
+    "covered_pixels": 1600,
+    "problems": {
+      "background_with_finite_depth": 0,
+      "covered_with_infinite_depth": 0,
+      "covered_with_nonpositive_depth": 0,
+      "nonfinite_color": 0,
+      "unknown_object": 0
+    }
+  },
+  "service_plate": {
+    "pass_sha256": {
+      "color.png": "44c3a23bb8571ce23e1a0760987ff06dc686cd8e251c79bb166da0043196eb22",
+      "color.rgb": "593ed95986fc0f5e875bc0ff62d77370040cfb2ebdec03856334204720864e46",
+      "depth.f32": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+      "depth.png": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+      "object.png": "5ae70366379221c6bc15de8e9f2c7d659afe46c36522f744ed291aee1af15c31",
+      "object.u32": "74bdbcf92217c507084b511aa3341208964be5a2e771242611a934005d00571c"
+    },
+    "plate_id": "plate_33cf20e0ca754937b3de0ff6a84f7072",
+    "seal_hash": "6e110d25db33cc0e4c9bbe8a50bc18177de1bf18c480db12fccdabc320409824",
+    "statistics": {
+      "background_depth": "positive_infinity",
+      "byte_order": "little",
+      "covered_pixels": 1600,
+      "depth_units": "camera_forward_distance",
+      "fragments": 6867,
+      "triangles": 4
+    },
+    "verification": {
+      "passes": {
+        "color.png": "44c3a23bb8571ce23e1a0760987ff06dc686cd8e251c79bb166da0043196eb22",
+        "color.rgb": "593ed95986fc0f5e875bc0ff62d77370040cfb2ebdec03856334204720864e46",
+        "depth.f32": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+        "depth.png": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+        "object.png": "5ae70366379221c6bc15de8e9f2c7d659afe46c36522f744ed291aee1af15c31",
+        "object.u32": "74bdbcf92217c507084b511aa3341208964be5a2e771242611a934005d00571c"
+      },
+      "valid": true
+    },
+    "visual_hash": "b8f0d5c847e0fcaaa680844c68251bc8885873a9d70c5739062b7489bb411dd8"
+  },
+  "title": "Coplanar ownership / 近共面部件归属"
+}

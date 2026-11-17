@@ -1,0 +1,469 @@
+{
+  "arms": {
+    "average-edge-color": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 0,
+        "color_only": 0,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "average",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "direct-edges": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "direct",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "divide-barycentrics": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "divide",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "narrow-tie-window": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 1e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "perspective-depth": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "perspective",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "reject-near-faces": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "reject",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "research": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "covered_pixels": 2668,
+      "depth_delta_against_service": {
+        "finite_pairs": 2668,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 10488,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 156,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 4964,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2668,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    }
+  },
+  "input_digest": "80d3a7e7434958d3616089821466a64fbb86d5028ba4e1da2b7b925f00165aa7",
+  "oracle_service": {
+    "aggregate_disagreements": 156,
+    "agrees": true,
+    "ambiguous_pixels": 0,
+    "ambiguous_window": 1e-07,
+    "checked_pixels": 4964,
+    "depth_mismatch_count": 0,
+    "depth_mismatches": [],
+    "depth_relative_tolerance": 1e-06,
+    "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+    "ownership_mismatch_count": 0,
+    "ownership_mismatches": []
+  },
+  "preview_consistency": {
+    "color_png_matches_raw": true,
+    "consistent": true,
+    "depth_png_mismatches": 0,
+    "object_png_mismatches": 0
+  },
+  "probe": {
+    "description": "横穿细件的最窄一侧（y 取细件中部，x 从背景经细件再回背景）",
+    "kind": "row",
+    "x_end": 50,
+    "x_start": 30,
+    "y": 32
+  },
+  "question": "当细件只覆盖像素内部分超采样点时，颜色通道的混色是否意味着物体通道也混用了归属？",
+  "scenario": "edge-blend",
+  "self_consistency": {
+    "consistent": true,
+    "covered_pixels": 2668,
+    "problems": {
+      "background_with_finite_depth": 0,
+      "covered_with_infinite_depth": 0,
+      "covered_with_nonpositive_depth": 0,
+      "nonfinite_color": 0,
+      "unknown_object": 0
+    }
+  },
+  "service_plate": {
+    "pass_sha256": {
+      "color.png": "f074633c037445a31531335ea1074e03e2ff840c3f10a1228e215c372ecec2fa",
+      "color.rgb": "5957051012973220d413ac51647f3aa673bfe34d6e5ad0772d2b258b040d38b9",
+      "depth.f32": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+      "depth.png": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+      "object.png": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+      "object.u32": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10"
+    },
+    "plate_id": "plate_6fddb597a1c1449e981cda2a9ef472ad",
+    "seal_hash": "40cdf3b33181ac458894a277f534653458192b75ef2304edd74133188b665cd9",
+    "statistics": {
+      "background_depth": "positive_infinity",
+      "byte_order": "little",
+      "covered_pixels": 2668,
+      "depth_units": "camera_forward_distance",
+      "fragments": 10488,
+      "triangles": 4
+    },
+    "verification": {
+      "passes": {
+        "color.png": "f074633c037445a31531335ea1074e03e2ff840c3f10a1228e215c372ecec2fa",
+        "color.rgb": "5957051012973220d413ac51647f3aa673bfe34d6e5ad0772d2b258b040d38b9",
+        "depth.f32": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+        "depth.png": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+        "object.png": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+        "object.u32": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10"
+      },
+      "valid": true
+    },
+    "visual_hash": "2f8c775097b9708345262c1e261373be1fd969b5c8f06c44af5d4f171c58834d"
+  },
+  "title": "Thin part edge mixing / 细件边缘混色"
+}

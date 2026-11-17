@@ -1,0 +1,220 @@
+{
+  "id": "perspective-clipping",
+  "title": "Perspective clipping / 透视裁剪",
+  "question": "三角形穿过近裁剪面或视锥侧面时，裁剪后插值是否仍给出正确的相机前向深度和部件归属？",
+  "lens": {
+    "eye": [
+      0,
+      0.1,
+      3.4
+    ],
+    "target": [
+      0,
+      0.1,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "projection": "perspective",
+    "fov": 50,
+    "near": 0.35,
+    "far": 40
+  },
+  "illumination": {
+    "lights": [
+      {
+        "direction": [
+          0.5,
+          0.4,
+          1.0
+        ],
+        "intensity": 0.75,
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "ambient": 0.28,
+    "background": [
+      0.93,
+      0.95,
+      0.97
+    ]
+  },
+  "meshes": {
+    "wall": {
+      "name": "clipping wall",
+      "vertices": [
+        [
+          -1.6,
+          -1.2,
+          -1.4
+        ],
+        [
+          1.6,
+          -1.2,
+          -1.4
+        ],
+        [
+          1.6,
+          1.2,
+          -1.4
+        ],
+        [
+          -1.6,
+          1.2,
+          -1.4
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    "blade": {
+      "name": "near-crossing blade",
+      "vertices": [
+        [
+          -2.6,
+          -0.08,
+          0.15
+        ],
+        [
+          2.6,
+          0.06,
+          -1.9
+        ],
+        [
+          0.0,
+          0.9,
+          3.35
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    "banner": {
+      "name": "side-crossing banner",
+      "vertices": [
+        [
+          -4.5,
+          1.35,
+          0.6
+        ],
+        [
+          4.5,
+          1.35,
+          0.6
+        ],
+        [
+          4.5,
+          2.15,
+          -0.4
+        ],
+        [
+          -4.5,
+          2.15,
+          -0.4
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "pigments": {
+    "wall-indigo": {
+      "name": "wall indigo",
+      "color": [
+        0.2,
+        0.26,
+        0.58
+      ],
+      "roughness": 0.7,
+      "specular": 0.1
+    },
+    "blade-cyan": {
+      "name": "blade cyan",
+      "color": [
+        0.1,
+        0.78,
+        0.72
+      ],
+      "roughness": 0.35,
+      "specular": 0.3
+    },
+    "banner-gold": {
+      "name": "banner gold",
+      "color": [
+        0.92,
+        0.74,
+        0.18
+      ],
+      "roughness": 0.55,
+      "specular": 0.2
+    }
+  },
+  "placements": [
+    {
+      "key": "zs-wall",
+      "mesh": "wall",
+      "pigment": "wall-indigo",
+      "transform": {}
+    },
+    {
+      "key": "zm-banner",
+      "mesh": "banner",
+      "pigment": "banner-gold",
+      "transform": {}
+    },
+    {
+      "key": "za-blade",
+      "mesh": "blade",
+      "pigment": "blade-cyan",
+      "transform": {}
+    }
+  ],
+  "request": {
+    "key": "perspective-clipping",
+    "width": 96,
+    "height": 72,
+    "samples": 2
+  },
+  "probe": {
+    "kind": "box",
+    "description": "刀片穿过近裁剪面附近的窗口；比较深度插值与归属，而不是只看颜色是否相同",
+    "x_start": 0,
+    "x_end": 48,
+    "y_start": 24,
+    "y_end": 48
+  },
+  "title_ascii": "PERSPECTIVE CLIPPING",
+  "question_ascii": "When a triangle crosses the near plane, does clipped interpolation keep depth and ownership correct?"
+}

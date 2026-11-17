@@ -1,0 +1,189 @@
+{
+  "id": "coplanar-ownership",
+  "title": "Coplanar ownership / 近共面部件归属",
+  "question": "当两个部件在同一深度相遇时，谁获得像素是颜色差异还是归属差异？数值后端改变累加顺序后归属是否漂移？",
+  "lens": {
+    "eye": [
+      0,
+      0,
+      6
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "projection": "perspective",
+    "fov": 45,
+    "near": 0.5,
+    "far": 100
+  },
+  "illumination": {
+    "lights": [
+      {
+        "direction": [
+          0.2,
+          0.35,
+          1.0
+        ],
+        "intensity": 0.8,
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "ambient": 0.25,
+    "background": [
+      0.93,
+      0.95,
+      0.97
+    ]
+  },
+  "meshes": {
+    "panel": {
+      "name": "coplanar panel",
+      "vertices": [
+        [
+          -1.2,
+          -1.2,
+          0
+        ],
+        [
+          1.2,
+          -1.2,
+          0
+        ],
+        [
+          1.2,
+          1.2,
+          0
+        ],
+        [
+          -1.2,
+          1.2,
+          0
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    "patch": {
+      "name": "coplanar patch",
+      "vertices": [
+        [
+          -0.5,
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0.5,
+          0
+        ],
+        [
+          -0.5,
+          0.5,
+          0
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "pigments": {
+    "panel-green": {
+      "name": "panel green",
+      "color": [
+        0.18,
+        0.55,
+        0.28
+      ],
+      "roughness": 0.6,
+      "specular": 0.15
+    },
+    "patch-magenta": {
+      "name": "patch magenta",
+      "color": [
+        0.72,
+        0.14,
+        0.48
+      ],
+      "roughness": 0.4,
+      "specular": 0.25
+    }
+  },
+  "placements": [
+    {
+      "key": "a-panel",
+      "mesh": "panel",
+      "pigment": "panel-green",
+      "transform": {
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "key": "b-patch",
+      "mesh": "patch",
+      "pigment": "patch-magenta",
+      "transform": {
+        "translation": [
+          0,
+          0,
+          1e-09
+        ]
+      }
+    }
+  ],
+  "request": {
+    "key": "coplanar-ownership",
+    "width": 80,
+    "height": 80,
+    "samples": 2
+  },
+  "probe": {
+    "kind": "box",
+    "description": "部件重叠的核心窗口；只比较归属通道与深度，不用颜色推断谁在前",
+    "x_start": 36,
+    "x_end": 44,
+    "y_start": 36,
+    "y_end": 44
+  },
+  "title_ascii": "COPLANAR OWNERSHIP",
+  "question_ascii": "When two parts meet at the same depth, is the difference color or ownership? Does the variant move ownership?"
+}

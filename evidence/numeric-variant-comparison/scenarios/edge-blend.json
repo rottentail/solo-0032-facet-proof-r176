@@ -1,0 +1,182 @@
+{
+  "id": "edge-blend",
+  "title": "Thin part edge mixing / 细件边缘混色",
+  "question": "当细件只覆盖像素内部分超采样点时，颜色通道的混色是否意味着物体通道也混用了归属？",
+  "lens": {
+    "eye": [
+      0,
+      0,
+      6
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "projection": "perspective",
+    "fov": 45,
+    "near": 0.5,
+    "far": 100
+  },
+  "illumination": {
+    "lights": [
+      {
+        "direction": [
+          0.35,
+          0.25,
+          0.9
+        ],
+        "intensity": 0.7,
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "ambient": 0.3,
+    "background": [
+      0.93,
+      0.95,
+      0.97
+    ]
+  },
+  "meshes": {
+    "backdrop": {
+      "name": "edge-blend backdrop",
+      "vertices": [
+        [
+          -2.2,
+          -1.8,
+          0
+        ],
+        [
+          2.2,
+          -1.8,
+          0
+        ],
+        [
+          2.2,
+          1.8,
+          0
+        ],
+        [
+          -2.2,
+          1.8,
+          0
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    "sliver": {
+      "name": "edge-blend sliver",
+      "vertices": [
+        [
+          -0.032,
+          -1.15,
+          0
+        ],
+        [
+          0.032,
+          -1.15,
+          0
+        ],
+        [
+          0.032,
+          1.15,
+          0
+        ],
+        [
+          -0.032,
+          1.15,
+          0
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  "pigments": {
+    "backdrop-blue": {
+      "name": "backdrop blue",
+      "color": [
+        0.16,
+        0.34,
+        0.62
+      ],
+      "roughness": 0.7,
+      "specular": 0.1
+    },
+    "sliver-amber": {
+      "name": "sliver amber",
+      "color": [
+        0.95,
+        0.62,
+        0.14
+      ],
+      "roughness": 0.5,
+      "specular": 0.2
+    }
+  },
+  "placements": [
+    {
+      "key": "zs-backdrop",
+      "mesh": "backdrop",
+      "pigment": "backdrop-blue",
+      "transform": {}
+    },
+    {
+      "key": "za-sliver",
+      "mesh": "sliver",
+      "pigment": "sliver-amber",
+      "transform": {
+        "translation": [
+          0,
+          0,
+          0.25
+        ]
+      }
+    }
+  ],
+  "request": {
+    "key": "edge-blend",
+    "width": 80,
+    "height": 64,
+    "samples": 2
+  },
+  "probe": {
+    "kind": "row",
+    "description": "横穿细件的最窄一侧（y 取细件中部，x 从背景经细件再回背景）",
+    "y": 32,
+    "x_start": 30,
+    "x_end": 50
+  },
+  "title_ascii": "THIN PART EDGE MIXING",
+  "question_ascii": "When a thin part covers only some supersamples, does the color blend mean ownership blended too?"
+}

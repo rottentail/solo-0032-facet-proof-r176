@@ -1,0 +1,50 @@
+{
+  "id": "key-order",
+  "title": "Placement key order / 键序与归属",
+  "question": "两块几何、材质与镜头完全相同，只交换放置键的顺序；颜色和深度几乎不变，但谁拥有像素会不会变？服务自带的比对能报告这件事吗？",
+  "lens": {
+    "eye": [0, 0, 6],
+    "target": [0, 0, 0],
+    "up": [0, 1, 0],
+    "projection": "perspective",
+    "fov": 45,
+    "near": 0.5,
+    "far": 100
+  },
+  "illumination": {
+    "lights": [
+      {"direction": [0.2, 0.35, 1.0], "intensity": 0.8, "color": [1, 1, 1]}
+    ],
+    "ambient": 0.25,
+    "background": [0.93, 0.95, 0.97]
+  },
+  "mesh": {
+    "name": "key-order panel",
+    "vertices": [[-1, -1, 0], [1, -1, 0], [1, 1, 0], [-1, 1, 0]],
+    "faces": [[0, 1, 2], [0, 2, 3]]
+  },
+  "pigment": {
+    "name": "key-order green",
+    "color": [0.3, 0.6, 0.4],
+    "roughness": 0.5,
+    "specular": 0.2
+  },
+  "variants": [
+    {
+      "label": "left",
+      "placements": [
+        {"key": "a-lower", "transform": {}},
+        {"key": "b-upper", "transform": {"translation": [0, 0, 1e-9]}}
+      ]
+    },
+    {
+      "label": "right",
+      "placements": [
+        {"key": "b-lower", "transform": {}},
+        {"key": "a-upper", "transform": {"translation": [0, 0, 1e-9]}}
+      ]
+    }
+  ],
+  "request": {"key": "key-order", "width": 48, "height": 48, "samples": 2},
+  "note_ascii": "Only placement keys differ. Object numbers follow sorted keys, so ownership can move with no geometry change."
+}

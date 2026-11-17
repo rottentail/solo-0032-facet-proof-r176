@@ -1,0 +1,2341 @@
+{
+  "arms": {
+    "average-edge-color": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 29,
+        "color_only": 8,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 1.5956227779388428,
+        "mean": 0.6440246051235617,
+        "pixels_over_1e-6": 3311
+      },
+      "fragments": 17059,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "average",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 32,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "plate_depth": 1.1000463962554932,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "plate_depth": 1.1097570657730103,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "plate_depth": 1.1122448444366455,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "plate_depth": 1.1147325038909912,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "plate_depth": 1.117220163345337,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "plate_depth": 1.1197079420089722,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "plate_depth": 1.1221956014633179,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "plate_depth": 1.1246832609176636,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "plate_depth": 1.1271710395812988,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "plate_depth": 1.1296586990356445,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "plate_depth": 1.1321464776992798,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "plate_depth": 1.1346341371536255,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "plate_depth": 1.1371217966079712,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "plate_depth": 1.1396095752716064,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "plate_depth": 1.1420972347259521,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "plate_depth": 1.1445850133895874,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "plate_depth": 1.147072672843933,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "plate_depth": 1.1495603322982788,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "plate_depth": 1.152048110961914,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "plate_depth": 1.1545357704162598,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "plate_depth": 1.157023549079895,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "plate_depth": 1.1595112085342407,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "plate_depth": 1.1619988679885864,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "plate_depth": 1.1644866466522217,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "plate_depth": 1.1669743061065674,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "plate_depth": 1.169461965560913,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "plate_depth": 1.1719497442245483,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "plate_depth": 1.174437403678894,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "plate_depth": 1.1769251823425293,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "plate_depth": 1.179412841796875,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "plate_depth": 1.1819005012512207,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "plate_depth": 1.184388279914856,
+            "x": 31,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 17,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 3.781070818012715,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 33
+          },
+          {
+            "oracle_distance": 3.9671120459513602,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 34
+          },
+          {
+            "oracle_distance": 3.995431576674489,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.024158336677798,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.172408380211515,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.203746374924844,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.235558676916837,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.267856136411486,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.3006499371211335,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.365790138554093,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 66,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4001122900100835,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 67,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.434978372569374,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 68,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4704014196870245,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.506394884573871,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.5429726572320215,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.580149082326786,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.617938977943349,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 36
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->3": 21
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    },
+    "direct-edges": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 148,
+        "color_only": 127,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 1.5956227779388428,
+        "mean": 0.6440246051235617,
+        "pixels_over_1e-6": 3311
+      },
+      "fragments": 17059,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "direct",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 32,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "plate_depth": 1.1000463962554932,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "plate_depth": 1.1097570657730103,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "plate_depth": 1.1122448444366455,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "plate_depth": 1.1147325038909912,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "plate_depth": 1.117220163345337,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "plate_depth": 1.1197079420089722,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "plate_depth": 1.1221956014633179,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "plate_depth": 1.1246832609176636,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "plate_depth": 1.1271710395812988,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "plate_depth": 1.1296586990356445,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "plate_depth": 1.1321464776992798,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "plate_depth": 1.1346341371536255,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "plate_depth": 1.1371217966079712,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "plate_depth": 1.1396095752716064,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "plate_depth": 1.1420972347259521,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "plate_depth": 1.1445850133895874,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "plate_depth": 1.147072672843933,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "plate_depth": 1.1495603322982788,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "plate_depth": 1.152048110961914,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "plate_depth": 1.1545357704162598,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "plate_depth": 1.157023549079895,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "plate_depth": 1.1595112085342407,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "plate_depth": 1.1619988679885864,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "plate_depth": 1.1644866466522217,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "plate_depth": 1.1669743061065674,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "plate_depth": 1.169461965560913,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "plate_depth": 1.1719497442245483,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "plate_depth": 1.174437403678894,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "plate_depth": 1.1769251823425293,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "plate_depth": 1.179412841796875,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "plate_depth": 1.1819005012512207,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "plate_depth": 1.184388279914856,
+            "x": 31,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 17,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 3.781070818012715,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 33
+          },
+          {
+            "oracle_distance": 3.9671120459513602,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 34
+          },
+          {
+            "oracle_distance": 3.995431576674489,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.024158336677798,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.172408380211515,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.203746374924844,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.235558676916837,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.267856136411486,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.3006499371211335,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.365790138554093,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 66,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4001122900100835,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 67,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.434978372569374,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 68,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4704014196870245,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.506394884573871,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.5429726572320215,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.580149082326786,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.617938977943349,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 36
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->3": 21
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    },
+    "divide-barycentrics": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 148,
+        "color_only": 127,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 1.5956227779388428,
+        "mean": 0.6440246051235617,
+        "pixels_over_1e-6": 3311
+      },
+      "fragments": 17059,
+      "options": {
+        "bary": "divide",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 32,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "plate_depth": 1.1000463962554932,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "plate_depth": 1.1097570657730103,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "plate_depth": 1.1122448444366455,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "plate_depth": 1.1147325038909912,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "plate_depth": 1.117220163345337,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "plate_depth": 1.1197079420089722,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "plate_depth": 1.1221956014633179,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "plate_depth": 1.1246832609176636,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "plate_depth": 1.1271710395812988,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "plate_depth": 1.1296586990356445,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "plate_depth": 1.1321464776992798,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "plate_depth": 1.1346341371536255,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "plate_depth": 1.1371217966079712,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "plate_depth": 1.1396095752716064,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "plate_depth": 1.1420972347259521,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "plate_depth": 1.1445850133895874,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "plate_depth": 1.147072672843933,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "plate_depth": 1.1495603322982788,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "plate_depth": 1.152048110961914,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "plate_depth": 1.1545357704162598,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "plate_depth": 1.157023549079895,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "plate_depth": 1.1595112085342407,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "plate_depth": 1.1619988679885864,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "plate_depth": 1.1644866466522217,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "plate_depth": 1.1669743061065674,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "plate_depth": 1.169461965560913,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "plate_depth": 1.1719497442245483,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "plate_depth": 1.174437403678894,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "plate_depth": 1.1769251823425293,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "plate_depth": 1.179412841796875,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "plate_depth": 1.1819005012512207,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "plate_depth": 1.184388279914856,
+            "x": 31,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 17,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 3.781070818012715,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 33
+          },
+          {
+            "oracle_distance": 3.9671120459513602,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 34
+          },
+          {
+            "oracle_distance": 3.995431576674489,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.024158336677798,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.172408380211515,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.203746374924844,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.235558676916837,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.267856136411486,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.3006499371211335,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.365790138554093,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 66,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4001122900100835,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 67,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.434978372569374,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 68,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4704014196870245,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.506394884573871,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.5429726572320215,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.580149082326786,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.617938977943349,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 36
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->3": 21
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    },
+    "narrow-tie-window": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 148,
+        "color_only": 127,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 1.5956227779388428,
+        "mean": 0.6440246051235617,
+        "pixels_over_1e-6": 3311
+      },
+      "fragments": 17059,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 1e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 32,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "plate_depth": 1.1000463962554932,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "plate_depth": 1.1097570657730103,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "plate_depth": 1.1122448444366455,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "plate_depth": 1.1147325038909912,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "plate_depth": 1.117220163345337,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "plate_depth": 1.1197079420089722,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "plate_depth": 1.1221956014633179,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "plate_depth": 1.1246832609176636,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "plate_depth": 1.1271710395812988,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "plate_depth": 1.1296586990356445,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "plate_depth": 1.1321464776992798,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "plate_depth": 1.1346341371536255,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "plate_depth": 1.1371217966079712,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "plate_depth": 1.1396095752716064,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "plate_depth": 1.1420972347259521,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "plate_depth": 1.1445850133895874,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "plate_depth": 1.147072672843933,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "plate_depth": 1.1495603322982788,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "plate_depth": 1.152048110961914,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "plate_depth": 1.1545357704162598,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "plate_depth": 1.157023549079895,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "plate_depth": 1.1595112085342407,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "plate_depth": 1.1619988679885864,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "plate_depth": 1.1644866466522217,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "plate_depth": 1.1669743061065674,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "plate_depth": 1.169461965560913,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "plate_depth": 1.1719497442245483,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "plate_depth": 1.174437403678894,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "plate_depth": 1.1769251823425293,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "plate_depth": 1.179412841796875,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "plate_depth": 1.1819005012512207,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "plate_depth": 1.184388279914856,
+            "x": 31,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 17,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 3.781070818012715,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 33
+          },
+          {
+            "oracle_distance": 3.9671120459513602,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 34
+          },
+          {
+            "oracle_distance": 3.995431576674489,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.024158336677798,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.172408380211515,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.203746374924844,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.235558676916837,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.267856136411486,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.3006499371211335,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.365790138554093,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 66,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4001122900100835,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 67,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.434978372569374,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 68,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4704014196870245,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.506394884573871,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.5429726572320215,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.580149082326786,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.617938977943349,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 36
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->3": 21
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    },
+    "perspective-depth": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 131,
+        "color_only": 131,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "pixels_over_1e-6": 0
+      },
+      "fragments": 16976,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "perspective",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": true,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 0,
+        "depth_mismatches": [],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 0,
+        "ownership_mismatches": []
+      },
+      "ownership_transitions": {},
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    },
+    "reject-near-faces": {
+      "against_service": {
+        "both": 3289,
+        "color_changed": 3356,
+        "color_only": 67,
+        "coverage_gained": 0,
+        "coverage_lost": 2066,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 1245,
+        "ownership_changed": 3289,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 2220,
+      "depth_delta_against_service": {
+        "finite_pairs": 2220,
+        "maximum": 3.1200023889541626,
+        "mean": 1.12929538160831,
+        "pixels_over_1e-6": 1245
+      },
+      "fragments": 8430,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "reject",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 11,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 85,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 86,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 87,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 88,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 89,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 90,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 91,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 92,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 93,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 94,
+            "y": 0
+          },
+          {
+            "oracle_distance": 2.8828758754289883,
+            "plate_depth": 2.885288715362549,
+            "x": 95,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 32,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "oracle_object": 1,
+            "plate_object": 2,
+            "x": 31,
+            "y": 0
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->0": 2066,
+        "1->2": 170,
+        "1->3": 1053
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 2220,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 4
+    },
+    "research": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 148,
+        "color_only": 127,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "covered_pixels": 4286,
+      "depth_delta_against_service": {
+        "finite_pairs": 4286,
+        "maximum": 1.5956227779388428,
+        "mean": 0.6440246051235617,
+        "pixels_over_1e-6": 3311
+      },
+      "fragments": 17059,
+      "options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "oracle": {
+        "aggregate_disagreements": 113,
+        "agrees": false,
+        "ambiguous_pixels": 0,
+        "ambiguous_window": 1e-07,
+        "checked_pixels": 6799,
+        "depth_mismatch_count": 32,
+        "depth_mismatches": [
+          {
+            "oracle_distance": 1.0844610039970062,
+            "plate_depth": 1.1000463962554932,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0865663237670504,
+            "plate_depth": 1.1097570657730103,
+            "x": 1,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0886798337677157,
+            "plate_depth": 1.1122448444366455,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0908015818852754,
+            "plate_depth": 1.1147325038909912,
+            "x": 3,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0929316163800362,
+            "plate_depth": 1.117220163345337,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.095069985889999,
+            "plate_depth": 1.1197079420089722,
+            "x": 5,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0972167394345613,
+            "plate_depth": 1.1221956014633179,
+            "x": 6,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.0993719264182613,
+            "plate_depth": 1.1246832609176636,
+            "x": 7,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1015355966345688,
+            "plate_depth": 1.1271710395812988,
+            "x": 8,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1037078002697214,
+            "plate_depth": 1.1296586990356445,
+            "x": 9,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1058885879066014,
+            "plate_depth": 1.1321464776992798,
+            "x": 10,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1080780105286663,
+            "plate_depth": 1.1346341371536255,
+            "x": 11,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.110276119523918,
+            "plate_depth": 1.1371217966079712,
+            "x": 12,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1124829666889267,
+            "plate_depth": 1.1396095752716064,
+            "x": 13,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1146986042328964,
+            "plate_depth": 1.1420972347259521,
+            "x": 14,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1169230847817848,
+            "plate_depth": 1.1445850133895874,
+            "x": 15,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1191564613824678,
+            "plate_depth": 1.147072672843933,
+            "x": 16,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1213987875069582,
+            "plate_depth": 1.1495603322982788,
+            "x": 17,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1236501170566713,
+            "plate_depth": 1.152048110961914,
+            "x": 18,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1259105043667457,
+            "plate_depth": 1.1545357704162598,
+            "x": 19,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1281800042104129,
+            "plate_depth": 1.157023549079895,
+            "x": 20,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1304586718034226,
+            "plate_depth": 1.1595112085342407,
+            "x": 21,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1327465628085214,
+            "plate_depth": 1.1619988679885864,
+            "x": 22,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1350437333399832,
+            "plate_depth": 1.1644866466522217,
+            "x": 23,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1373502399681985,
+            "plate_depth": 1.1669743061065674,
+            "x": 24,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1396661397243177,
+            "plate_depth": 1.169461965560913,
+            "x": 25,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1419914901049515,
+            "plate_depth": 1.1719497442245483,
+            "x": 26,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1443263490769302,
+            "plate_depth": 1.174437403678894,
+            "x": 27,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1466707750821188,
+            "plate_depth": 1.1769251823425293,
+            "x": 28,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1490248270422947,
+            "plate_depth": 1.179412841796875,
+            "x": 29,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1513885643640824,
+            "plate_depth": 1.1819005012512207,
+            "x": 30,
+            "y": 0
+          },
+          {
+            "oracle_distance": 1.1537620469439533,
+            "plate_depth": 1.184388279914856,
+            "x": 31,
+            "y": 0
+          }
+        ],
+        "depth_relative_tolerance": 1e-06,
+        "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+        "ownership_mismatch_count": 17,
+        "ownership_mismatches": [
+          {
+            "oracle_distance": 3.781070818012715,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 33
+          },
+          {
+            "oracle_distance": 3.9671120459513602,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 34
+          },
+          {
+            "oracle_distance": 3.995431576674489,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.024158336677798,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 34
+          },
+          {
+            "oracle_distance": 4.172408380211515,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.203746374924844,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.235558676916837,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.267856136411486,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.3006499371211335,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 35
+          },
+          {
+            "oracle_distance": 4.365790138554093,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 66,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4001122900100835,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 67,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.434978372569374,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 68,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.4704014196870245,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 69,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.506394884573871,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 70,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.5429726572320215,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 71,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.580149082326786,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 72,
+            "y": 36
+          },
+          {
+            "oracle_distance": 4.617938977943349,
+            "oracle_object": 1,
+            "plate_object": 3,
+            "x": 73,
+            "y": 36
+          }
+        ]
+      },
+      "ownership_transitions": {
+        "1->3": 21
+      },
+      "self_consistency": {
+        "consistent": true,
+        "covered_pixels": 4286,
+        "problems": {
+          "background_with_finite_depth": 0,
+          "covered_with_infinite_depth": 0,
+          "covered_with_nonpositive_depth": 0,
+          "nonfinite_color": 0,
+          "unknown_object": 0
+        }
+      },
+      "triangles": 6
+    }
+  },
+  "input_digest": "4848ae9802a67365df82262ffcd627fda9bd77ce9d4dac7fba1f67b2e8c94856",
+  "oracle_service": {
+    "aggregate_disagreements": 113,
+    "agrees": true,
+    "ambiguous_pixels": 0,
+    "ambiguous_window": 1e-07,
+    "checked_pixels": 6799,
+    "depth_mismatch_count": 0,
+    "depth_mismatches": [],
+    "depth_relative_tolerance": 1e-06,
+    "method": "camera-space ray cast, Moller-Trumbore, no edge functions",
+    "ownership_mismatch_count": 0,
+    "ownership_mismatches": []
+  },
+  "preview_consistency": {
+    "color_png_matches_raw": true,
+    "consistent": true,
+    "depth_png_mismatches": 0,
+    "object_png_mismatches": 0
+  },
+  "probe": {
+    "description": "刀片穿过近裁剪面附近的窗口；比较深度插值与归属，而不是只看颜色是否相同",
+    "kind": "box",
+    "x_end": 48,
+    "x_start": 0,
+    "y_end": 48,
+    "y_start": 24
+  },
+  "question": "三角形穿过近裁剪面或视锥侧面时，裁剪后插值是否仍给出正确的相机前向深度和部件归属？",
+  "scenario": "perspective-clipping",
+  "self_consistency": {
+    "consistent": true,
+    "covered_pixels": 4286,
+    "problems": {
+      "background_with_finite_depth": 0,
+      "covered_with_infinite_depth": 0,
+      "covered_with_nonpositive_depth": 0,
+      "nonfinite_color": 0,
+      "unknown_object": 0
+    }
+  },
+  "service_plate": {
+    "pass_sha256": {
+      "color.png": "f66c28ed50d6498dce1cbd7e10debe0c482d3e452ac431dce22efa7e84867c55",
+      "color.rgb": "95ab239a0f2fb13399be05c7486d92ac76e958378d8e5a53c9786efdb579684a",
+      "depth.f32": "deff07f2f4d02e65d25084733971d7705940014a788524e0859438b44a1e2159",
+      "depth.png": "00c06f7133b3d68ffe3415e3a169da251ef06ccd8960e7c92a435eb6efaedfd1",
+      "object.png": "fdc0f370655b1f9fed63f5e23f4d901859529173b3ea00f79a5960c7a64c4730",
+      "object.u32": "61d0ef6fc7e57b92def1e3a4d3b3f98fb171cc7fda8c06716682535d3828cb5f"
+    },
+    "plate_id": "plate_04810879813445f9b5fbec31977d8114",
+    "seal_hash": "70d97f4321364e66d1d958a5e14b9c14ddaed564501665cebbf06c81af508b02",
+    "statistics": {
+      "background_depth": "positive_infinity",
+      "byte_order": "little",
+      "covered_pixels": 4286,
+      "depth_units": "camera_forward_distance",
+      "fragments": 16976,
+      "triangles": 6
+    },
+    "verification": {
+      "passes": {
+        "color.png": "f66c28ed50d6498dce1cbd7e10debe0c482d3e452ac431dce22efa7e84867c55",
+        "color.rgb": "95ab239a0f2fb13399be05c7486d92ac76e958378d8e5a53c9786efdb579684a",
+        "depth.f32": "deff07f2f4d02e65d25084733971d7705940014a788524e0859438b44a1e2159",
+        "depth.png": "00c06f7133b3d68ffe3415e3a169da251ef06ccd8960e7c92a435eb6efaedfd1",
+        "object.png": "fdc0f370655b1f9fed63f5e23f4d901859529173b3ea00f79a5960c7a64c4730",
+        "object.u32": "61d0ef6fc7e57b92def1e3a4d3b3f98fb171cc7fda8c06716682535d3828cb5f"
+      },
+      "valid": true
+    },
+    "visual_hash": "4e49e749aa3895ab07daffcfdaad83398cd520d2e09f2277a05e2007f33c93d6"
+  },
+  "title": "Perspective clipping / 透视裁剪"
+}

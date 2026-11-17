@@ -1,0 +1,983 @@
+{
+  "build_digest": "a02624daa86db377a9a0052e140482a858fb9513ea2a70ff8cf0f65d51d4be60",
+  "build_id": "build-2026-11-16",
+  "companions": {
+    "key-order": {
+      "channel_compare": {
+        "both": 4,
+        "color_changed": 4,
+        "color_only": 0,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 340,
+        "ownership_only": 336,
+        "pixels": 2304
+      },
+      "left": "left",
+      "note": "The service comparison endpoint has no object-channel field.",
+      "question": "两块几何、材质与镜头完全相同，只交换放置键的顺序；颜色和深度几乎不变，但谁拥有像素会不会变？服务自带的比对能报告这件事吗？",
+      "request": {
+        "height": 48,
+        "key": "key-order",
+        "samples": 2,
+        "width": 48
+      },
+      "right": "right",
+      "service_comparison": {
+        "color_changed": 0,
+        "depth_changed": 0,
+        "maximum_depth_delta": 0.0,
+        "mean_channel_delta": 0.0023148148148148147,
+        "silhouette_changed": 0
+      },
+      "title": "Placement key order / 键序与归属"
+    }
+  },
+  "content_digest": "9ba0fb36927850fa41b3dab67e54303416941274ec45aa1dc20ddf09e024caa7",
+  "diagnostic_arms": {
+    "average-edge-color": {
+      "bary": "reciprocal",
+      "depth_interp": "screen_linear",
+      "edge_color": "average",
+      "edge_eval": "incremental",
+      "near_crossing": "clip",
+      "tie_window": 4e-09
+    },
+    "baseline": {
+      "bary": "divide",
+      "depth_interp": "perspective",
+      "edge_color": "average",
+      "edge_eval": "direct",
+      "near_crossing": "clip",
+      "tie_window": 1e-09
+    },
+    "direct-edges": {
+      "bary": "reciprocal",
+      "depth_interp": "screen_linear",
+      "edge_color": "nearest",
+      "edge_eval": "direct",
+      "near_crossing": "clip",
+      "tie_window": 4e-09
+    },
+    "divide-barycentrics": {
+      "bary": "divide",
+      "depth_interp": "screen_linear",
+      "edge_color": "nearest",
+      "edge_eval": "incremental",
+      "near_crossing": "clip",
+      "tie_window": 4e-09
+    },
+    "narrow-tie-window": {
+      "bary": "reciprocal",
+      "depth_interp": "screen_linear",
+      "edge_color": "nearest",
+      "edge_eval": "incremental",
+      "near_crossing": "clip",
+      "tie_window": 1e-09
+    },
+    "perspective-depth": {
+      "bary": "reciprocal",
+      "depth_interp": "perspective",
+      "edge_color": "nearest",
+      "edge_eval": "incremental",
+      "near_crossing": "clip",
+      "tie_window": 4e-09
+    },
+    "reject-near-faces": {
+      "bary": "reciprocal",
+      "depth_interp": "screen_linear",
+      "edge_color": "nearest",
+      "edge_eval": "incremental",
+      "near_crossing": "reject",
+      "tie_window": 4e-09
+    },
+    "research": {
+      "bary": "reciprocal",
+      "depth_interp": "screen_linear",
+      "edge_color": "nearest",
+      "edge_eval": "incremental",
+      "near_crossing": "clip",
+      "tie_window": 4e-09
+    }
+  },
+  "files": {
+    "bundles/coplanar-ownership.zip": {
+      "sha256": "b1a292961c40477ce3e3d332913e9c3ea1b44db0ef53cf9bf8213dc4e2af8a26",
+      "size": 4212
+    },
+    "bundles/edge-blend.zip": {
+      "sha256": "85bb1cd686e6eae62eaa3531917a1acbbc38622e2c16aa2abc18e7597dfcc59e",
+      "size": 3931
+    },
+    "bundles/perspective-clipping.zip": {
+      "sha256": "4594a1fd96f792fb63c9c80fbb2be49db72b19eeeb7f0c138962df2f69ae6792",
+      "size": 16571
+    },
+    "inputs/coplanar-ownership.json": {
+      "sha256": "90fd51eca59520ea25e3f5178053ef4442b715e85ea706e4993d4c9e40b706a7",
+      "size": 3423
+    },
+    "inputs/edge-blend.json": {
+      "sha256": "7d48d6a9752c96df9ead699956704766faf72ccb24ff30077d57fa9cc5295027",
+      "size": 3435
+    },
+    "inputs/perspective-clipping.json": {
+      "sha256": "a23cd14eec2d278a91c06dec0899534571f4542a89c2bea19ba322eadaa4b6c8",
+      "size": 4483
+    },
+    "plates/coplanar-ownership/research-color.png": {
+      "sha256": "f04afa06a3cb709351c519a8a8b79d5e7729545ad8fdb6fe2b0ba40998ee9222",
+      "size": 293
+    },
+    "plates/coplanar-ownership/research-color.rgb": {
+      "sha256": "ac887be325e8c954a6141a7df0c151e4a94a0def3e5753d2561b1fe778a2b16d",
+      "size": 19200
+    },
+    "plates/coplanar-ownership/research-depth.f32": {
+      "sha256": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+      "size": 25600
+    },
+    "plates/coplanar-ownership/research-depth.png": {
+      "sha256": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+      "size": 133
+    },
+    "plates/coplanar-ownership/research-object.png": {
+      "sha256": "65b75c76ba7f60eda692350f3f2f59110bf7c2a37e4fd85793bb3b4e97d072ba",
+      "size": 142
+    },
+    "plates/coplanar-ownership/research-object.u32": {
+      "sha256": "91c70f35c32dce0ceaee3895c94f8896062086f5eef6d21baa60787cd3fd805e",
+      "size": 25600
+    },
+    "plates/coplanar-ownership/service-color.png": {
+      "sha256": "44c3a23bb8571ce23e1a0760987ff06dc686cd8e251c79bb166da0043196eb22",
+      "size": 543
+    },
+    "plates/coplanar-ownership/service-color.rgb": {
+      "sha256": "593ed95986fc0f5e875bc0ff62d77370040cfb2ebdec03856334204720864e46",
+      "size": 19200
+    },
+    "plates/coplanar-ownership/service-depth.f32": {
+      "sha256": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+      "size": 25600
+    },
+    "plates/coplanar-ownership/service-depth.png": {
+      "sha256": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+      "size": 133
+    },
+    "plates/coplanar-ownership/service-object.png": {
+      "sha256": "5ae70366379221c6bc15de8e9f2c7d659afe46c36522f744ed291aee1af15c31",
+      "size": 172
+    },
+    "plates/coplanar-ownership/service-object.u32": {
+      "sha256": "74bdbcf92217c507084b511aa3341208964be5a2e771242611a934005d00571c",
+      "size": 25600
+    },
+    "plates/edge-blend/research-color.png": {
+      "sha256": "d1bccc7b5bcba2d9611a90657ed17e7cbeddc40034a3574454729b8515eff56f",
+      "size": 298
+    },
+    "plates/edge-blend/research-color.rgb": {
+      "sha256": "366e80aac6af27e60634115e38a96f09f682126cec847bc2ac54e9b779687210",
+      "size": 15360
+    },
+    "plates/edge-blend/research-depth.f32": {
+      "sha256": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+      "size": 20480
+    },
+    "plates/edge-blend/research-depth.png": {
+      "sha256": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+      "size": 158
+    },
+    "plates/edge-blend/research-object.png": {
+      "sha256": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+      "size": 156
+    },
+    "plates/edge-blend/research-object.u32": {
+      "sha256": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10",
+      "size": 20480
+    },
+    "plates/edge-blend/service-color.png": {
+      "sha256": "f074633c037445a31531335ea1074e03e2ff840c3f10a1228e215c372ecec2fa",
+      "size": 390
+    },
+    "plates/edge-blend/service-color.rgb": {
+      "sha256": "5957051012973220d413ac51647f3aa673bfe34d6e5ad0772d2b258b040d38b9",
+      "size": 15360
+    },
+    "plates/edge-blend/service-depth.f32": {
+      "sha256": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+      "size": 20480
+    },
+    "plates/edge-blend/service-depth.png": {
+      "sha256": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+      "size": 158
+    },
+    "plates/edge-blend/service-object.png": {
+      "sha256": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+      "size": 156
+    },
+    "plates/edge-blend/service-object.u32": {
+      "sha256": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10",
+      "size": 20480
+    },
+    "plates/key-order/left-color.png": {
+      "sha256": "ccef1f8d483248dfdaa17d20d39234e5002ecf6f93f840383a9af5362155ba67",
+      "size": 242
+    },
+    "plates/key-order/left-color.rgb": {
+      "sha256": "d5eaacea2261dd0244bdfdc73548c4c166aa819b67114b366037919ac16e89e0",
+      "size": 6912
+    },
+    "plates/key-order/left-depth.f32": {
+      "sha256": "76b52ef76c1393c7d67d39b7e2fb16fa5eb4d7eed6adaf6dfcdf2e1b1a0f55e1",
+      "size": 9216
+    },
+    "plates/key-order/left-depth.png": {
+      "sha256": "1f952004592c6b0fe5f62c000049a782684535db2f605be913246dccb0c2ddb1",
+      "size": 102
+    },
+    "plates/key-order/left-object.png": {
+      "sha256": "dd2158a2e81cb323fba4df11bf5e90135b95021468ac4a586a3822efd65be61c",
+      "size": 144
+    },
+    "plates/key-order/left-object.u32": {
+      "sha256": "1d488f0f840a7829c3571f34a7c9131baac60b1f4c7b7612b0331575627ccd06",
+      "size": 9216
+    },
+    "plates/key-order/right-color.png": {
+      "sha256": "1148d00b0fa1ed4938dd93447e4fe7c1ee691fc3f0ea24be64c8feca519ef9db",
+      "size": 245
+    },
+    "plates/key-order/right-color.rgb": {
+      "sha256": "ff3fdfaea1c2cb8100cb41f2d38d1e2ae9fcdde4d7a58bae4202e810cf788a5b",
+      "size": 6912
+    },
+    "plates/key-order/right-depth.f32": {
+      "sha256": "76b52ef76c1393c7d67d39b7e2fb16fa5eb4d7eed6adaf6dfcdf2e1b1a0f55e1",
+      "size": 9216
+    },
+    "plates/key-order/right-depth.png": {
+      "sha256": "1f952004592c6b0fe5f62c000049a782684535db2f605be913246dccb0c2ddb1",
+      "size": 102
+    },
+    "plates/key-order/right-object.png": {
+      "sha256": "195713a7abf09b0a2b568dfaa70b24a92b5a5f8d6d466daecdd1566541601db8",
+      "size": 226
+    },
+    "plates/key-order/right-object.u32": {
+      "sha256": "c78196e0b66f106ba68bbe54898b3dfe9bba21c3fc1d5b2b85debbf34981d34b",
+      "size": 9216
+    },
+    "plates/perspective-clipping/research-color.png": {
+      "sha256": "a6644ce8ca39e16436ff98300bf10455096077fb574142d30d1dc817daf221f1",
+      "size": 305
+    },
+    "plates/perspective-clipping/research-color.rgb": {
+      "sha256": "c6c355b4c93908ce201137c7eb34e0826bef5007eea785302e19b9afcdbf1f00",
+      "size": 20736
+    },
+    "plates/perspective-clipping/research-depth.f32": {
+      "sha256": "43c73440ad283d2e24952f8f986dbf4c8025d879b8a36968e3825b4b8b355d79",
+      "size": 27648
+    },
+    "plates/perspective-clipping/research-depth.png": {
+      "sha256": "7bee88f908cec3edb08b42b9ba851edb341cad790f2a02eedd99de39f38a3a8b",
+      "size": 858
+    },
+    "plates/perspective-clipping/research-object.png": {
+      "sha256": "fa231732e7adf07fd3265a732c09170843946064b16b5012e09578c1e402f3a8",
+      "size": 246
+    },
+    "plates/perspective-clipping/research-object.u32": {
+      "sha256": "2020c078d9dcabe09b040fad5191f569be4b2024d145a7ed368beecd91dc775c",
+      "size": 27648
+    },
+    "plates/perspective-clipping/service-color.png": {
+      "sha256": "f66c28ed50d6498dce1cbd7e10debe0c482d3e452ac431dce22efa7e84867c55",
+      "size": 393
+    },
+    "plates/perspective-clipping/service-color.rgb": {
+      "sha256": "95ab239a0f2fb13399be05c7486d92ac76e958378d8e5a53c9786efdb579684a",
+      "size": 20736
+    },
+    "plates/perspective-clipping/service-depth.f32": {
+      "sha256": "deff07f2f4d02e65d25084733971d7705940014a788524e0859438b44a1e2159",
+      "size": 27648
+    },
+    "plates/perspective-clipping/service-depth.png": {
+      "sha256": "00c06f7133b3d68ffe3415e3a169da251ef06ccd8960e7c92a435eb6efaedfd1",
+      "size": 703
+    },
+    "plates/perspective-clipping/service-object.png": {
+      "sha256": "fdc0f370655b1f9fed63f5e23f4d901859529173b3ea00f79a5960c7a64c4730",
+      "size": 237
+    },
+    "plates/perspective-clipping/service-object.u32": {
+      "sha256": "61d0ef6fc7e57b92def1e3a4d3b3f98fb171cc7fda8c06716682535d3828cb5f",
+      "size": 27648
+    },
+    "readings/coplanar-ownership.json": {
+      "sha256": "53e7d47609228165ab1d7ab4731dc388c7dceca504720cc4d3e20534693d1f68",
+      "size": 14695
+    },
+    "readings/coplanar-ownership.sheet1.md": {
+      "sha256": "00bfe6cec2833758d19e76f753388ad42d9e88e4cefecbaada3fb785d5947236",
+      "size": 1345
+    },
+    "readings/coplanar-ownership.sheet2.md": {
+      "sha256": "8997aa95af09b9f74806c31634051c358ca16e41f6e68982026726c306a8be46",
+      "size": 625
+    },
+    "readings/edge-blend.json": {
+      "sha256": "dcc025970e5b9ffeb696fdd239ce45166b7673b88f2251c634d13eba7ad10fef",
+      "size": 14411
+    },
+    "readings/edge-blend.sheet1.md": {
+      "sha256": "f01dce2c074fa29386390e4b9b11a9035d5bd5a05e95323f545eec595aec2a6b",
+      "size": 1301
+    },
+    "readings/edge-blend.sheet2.md": {
+      "sha256": "b0728e09eae726514202df521197462a7ab8a65f66c7226d1edeeaa0b789f629",
+      "size": 617
+    },
+    "readings/key-order-left-plate.json": {
+      "sha256": "9d4f46db4825962ea081afc1929c4b6bf8fd3ad7d765a01e1f2cc79b0ebfbc12",
+      "size": 1078
+    },
+    "readings/key-order-right-plate.json": {
+      "sha256": "567c4db059d856fde6c7d38275fec70a6e17d2c484ff0d1219f31b724880a650",
+      "size": 1078
+    },
+    "readings/key-order.json": {
+      "sha256": "ee7071e129b5f763e6c316114462710105f6a2638c2d07c9eb50aca65db7c2f0",
+      "size": 1799
+    },
+    "readings/perspective-clipping.json": {
+      "sha256": "8f859b8cdf0b3fe6fa4090da01180c31c5b7898a0c8c30856410f7ee1bb1524f",
+      "size": 63743
+    },
+    "readings/perspective-clipping.sheet1.md": {
+      "sha256": "e893e1b7e067bc478343d53c178afe2a600314d5435b06ad450321886c661ae0",
+      "size": 1328
+    },
+    "readings/perspective-clipping.sheet2.md": {
+      "sha256": "deb7e51060248bb58499406eb76bcc0a8db98b6d8f147bf067321b014af1144e",
+      "size": 627
+    },
+    "sheets/coplanar-ownership-01-color-and-ownership.png": {
+      "sha256": "0b0f6c74584d9c1bc48994dff4abbed5a2f569937922804489e27f6b5f38af0b",
+      "size": 28709
+    },
+    "sheets/coplanar-ownership-02-attribution.png": {
+      "sha256": "7d66ed176d9a26058755ca21f621d8ce36b64382648479b450c10694ba4d6756",
+      "size": 20768
+    },
+    "sheets/edge-blend-01-color-and-ownership.png": {
+      "sha256": "7e4b14475364bdde0950807ec0e841ce8bc2e161c982d4f25eea9a4f4fdb41c5",
+      "size": 29730
+    },
+    "sheets/edge-blend-02-attribution.png": {
+      "sha256": "814f215afe4d7ac5458e4e8048537cb1016881971c50de7811c61f13d288466f",
+      "size": 17336
+    },
+    "sheets/key-order-01-ownership-without-geometry-change.png": {
+      "sha256": "dc0a1a5eb14ceb6221136524a9be27d628bc99b1d58fc31d7b702a203164272d",
+      "size": 21824
+    },
+    "sheets/perspective-clipping-01-color-and-ownership.png": {
+      "sha256": "d8375015a03db27a9e114442f640023fe8affc7a51e021f4d1c9a8d78a531a6e",
+      "size": 27421
+    },
+    "sheets/perspective-clipping-02-attribution.png": {
+      "sha256": "3de5db78dbee361054631c033d7de5ed56565050c85713742f5e8f1bfeb7a842",
+      "size": 20481
+    },
+    "support/facetproof/__init__.py": {
+      "sha256": "1fd2dafad56f37dc658a97eda4d94fbd5f2c2cc3bf5228fa207fa5f8b7f5a0b9",
+      "size": 89
+    },
+    "support/facetproof/algebra.py": {
+      "sha256": "e508769f77093a2016c6523a7ca050c4a767e4bbec7cc352fd755b8f567d473b",
+      "size": 2059
+    },
+    "support/facetproof/camera.py": {
+      "sha256": "28efdd7934011e90b2d133d43577841f7e14680190a1f1088418174b58a91bbf",
+      "size": 2205
+    },
+    "support/facetproof/clipping.py": {
+      "sha256": "c9f5c1a248766678f029295f94169f44f765f5c2a31fee33b339e3a9cb29c9b1",
+      "size": 937
+    },
+    "support/facetproof/errors.py": {
+      "sha256": "7cff3fc4241d979cfe1c0f5546f6290890c4df2896edae8b701bcfc7913760d5",
+      "size": 773
+    },
+    "support/facetproof/illumination.py": {
+      "sha256": "61bfd61e6e3cdb2b4cef08be9673a02cd84eb3108a6c5394d54c6be390126ab4",
+      "size": 935
+    },
+    "support/facetproof/passes.py": {
+      "sha256": "ece71e23fb2ae491543a2e6c17e2a1a01ecb52c8b63e41e70b4d97ad8e6b75ea",
+      "size": 2041
+    },
+    "support/facetproof/pigments.py": {
+      "sha256": "32a7819386618d05923a522c2900d19ab566dc2c9bdc78a32e3ae13b4ad1f921",
+      "size": 1457
+    },
+    "support/facetproof/planner.py": {
+      "sha256": "776e3c5427a1c5160f7fb6fcaa6bb1a23a9a02c058b20d8afed706e34aceb3ad",
+      "size": 2785
+    },
+    "support/facetproof/png.py": {
+      "sha256": "49cfe9affee3eac83a8f70b4993e96595f66eee48fe8150c4126968e1bba5504",
+      "size": 1627
+    },
+    "support/facetproof/raster.py": {
+      "sha256": "40653605dfcae0a312bb27f2b884d59c54c475257bf92e686ecb666a3eb13a45",
+      "size": 2465
+    },
+    "support/facetproof/shading.py": {
+      "sha256": "fd3719506f419955e9824987710ff5815e58eef654e3596e2cb4ee6631e291f2",
+      "size": 899
+    },
+    "support/facetproof/tile_protocol.py": {
+      "sha256": "3f6f5c178aadde406b10fe194449d7920bb53b13d54ea99603c6a192411d0834",
+      "size": 8946
+    },
+    "support/facetproof/tile_renderer.py": {
+      "sha256": "eaa0a99699a60e3c9d675ea74713cd0cfe8cbcec3b860142f747223b0018b180",
+      "size": 1475
+    },
+    "support/facetproof/values.py": {
+      "sha256": "bca977560b425ee2ed01f5adde3a30b6ed9ccdb7340ca036394d148dc2d5e943",
+      "size": 2332
+    },
+    "support/facetproof/worker.py": {
+      "sha256": "0c0fc16539858f1bbf6e3afc669eb2f5829d9e0cd09652fc8c3bcfa6d2783c0e",
+      "size": 2635
+    },
+    "support/facetreader/__init__.py": {
+      "sha256": "2d75b14c1f5e3689aad704778f4cca0239629fec1a17799be17e7d7bd583de84",
+      "size": 899
+    },
+    "support/facetreader/archive.py": {
+      "sha256": "e1e9f4ff3147fbcd841593efcf6dd4b0430c69240f8a877ab755a510be61f30e",
+      "size": 3768
+    },
+    "support/facetreader/errors.py": {
+      "sha256": "f3985859c97469a81b187361cd8b16380fadcab0821fb0df3b03ba8020a7df60",
+      "size": 346
+    },
+    "support/facetreader/format.py": {
+      "sha256": "01d898bf118111b1658314891895a4287983415ee3e4539eaf7b5a97bf7e04a5",
+      "size": 10887
+    },
+    "support/facetreader/png.py": {
+      "sha256": "79eaea613a925401b0456a378852c832bdce474032122cfd95b356b9c66a6c2c",
+      "size": 4570
+    },
+    "support/harness/compare.py": {
+      "sha256": "99dc5fe2b80fecb8fd1e315e3bddc7ceacc5f32018ed6bb0ba430ca8eb5a2fbc",
+      "size": 7863
+    },
+    "support/harness/font.py": {
+      "sha256": "177859808401191c8086c6c8d9d483c4716104dd3fda3be4350e76f953ec38ac",
+      "size": 5739
+    },
+    "support/harness/job.py": {
+      "sha256": "2bbca6aa2ad5638682ce5659cf3427079a7f16ce1c9656607a17fae5c6628b9a",
+      "size": 7073
+    },
+    "support/harness/keyorder.py": {
+      "sha256": "484b8bbc8d3557c896852b7899756aa6a6846b7ea1e5e4c9a3d99a1654d37973",
+      "size": 7532
+    },
+    "support/harness/oracle.py": {
+      "sha256": "839309335de0224a628b6d58dc8bf116fb1d4834fa6a2ea3a9d717442eb12b4b",
+      "size": 6352
+    },
+    "support/harness/pngdiff.py": {
+      "sha256": "349cd34d33a41633e2afea4f7b5277954ab6a93483d63f294dd1e9789194d0bd",
+      "size": 4013
+    },
+    "support/harness/scenario.py": {
+      "sha256": "f54763a5921d2afb602c85f68d01e86047c247a9f00c989ed8ca37803cf1d754",
+      "size": 5281
+    },
+    "support/harness/sheet.py": {
+      "sha256": "9c2ffcb3220d8644dfbf61234c2484e027083da58c8b54ee06770e110f98ddb4",
+      "size": 3921
+    },
+    "support/harness/variant.py": {
+      "sha256": "679ce59828dbdae7d25e63efaebd740c1b518369fefa6f01b87e8cec3af42e37",
+      "size": 15049
+    },
+    "support/tools/build.py": {
+      "sha256": "686b46292839f880de975642e24e23c4099bebc3f3e148b7a55efba2e4a32200",
+      "size": 23254
+    },
+    "support/tools/drift.py": {
+      "sha256": "2636d413d3f0ca1afda74ed34cc6d935b14f594209284e387b3dc2ec8087f4e4",
+      "size": 2861
+    },
+    "support/tools/verify.py": {
+      "sha256": "73f40262e943f72b47d118677ca003be78cd3dd1966f3baa690333eda82ce47a",
+      "size": 7958
+    }
+  },
+  "format": "facet-numeric-comparison-bundle-1",
+  "offline_reader": {
+    "facetreader/__init__.py": "2d75b14c1f5e3689aad704778f4cca0239629fec1a17799be17e7d7bd583de84",
+    "facetreader/archive.py": "e1e9f4ff3147fbcd841593efcf6dd4b0430c69240f8a877ab755a510be61f30e",
+    "facetreader/errors.py": "f3985859c97469a81b187361cd8b16380fadcab0821fb0df3b03ba8020a7df60",
+    "facetreader/format.py": "01d898bf118111b1658314891895a4287983415ee3e4539eaf7b5a97bf7e04a5",
+    "facetreader/png.py": "79eaea613a925401b0456a378852c832bdce474032122cfd95b356b9c66a6c2c"
+  },
+  "renderer_revision": "facet-raster-1",
+  "research_options": {
+    "bary": "reciprocal",
+    "depth_interp": "screen_linear",
+    "edge_color": "nearest",
+    "edge_eval": "incremental",
+    "near_crossing": "clip",
+    "tie_window": 4e-09
+  },
+  "scenarios": {
+    "coplanar-ownership": {
+      "against_service": {
+        "both": 252,
+        "color_changed": 430,
+        "color_only": 178,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 252,
+        "ownership_only": 0,
+        "pixels": 6400
+      },
+      "arms": {
+        "average-edge-color": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        },
+        "direct-edges": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        },
+        "divide-barycentrics": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        },
+        "narrow-tie-window": {
+          "covered_pixels": 1600,
+          "fragments": 7015,
+          "triangles": 4
+        },
+        "perspective-depth": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        },
+        "reject-near-faces": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        },
+        "research": {
+          "covered_pixels": 1600,
+          "fragments": 6084,
+          "triangles": 4
+        }
+      },
+      "input": "inputs/coplanar-ownership.json",
+      "input_digest": "929222e1d0d85d43a4c27f1b17316aaf030324eaaf5fdcf02e8b01fdcc2db8e9",
+      "offline_reader": {
+        "summary": {
+          "background_pixels": 4800,
+          "covered_pixels": 1600,
+          "depth_units": "camera_forward_distance",
+          "finite_depth_range": [
+            6.0,
+            6.0
+          ],
+          "height": 80,
+          "object_id_scope": "local_to_this_plate",
+          "objects": 2,
+          "samples": 2,
+          "width": 80
+        },
+        "valid": true
+      },
+      "probe": {
+        "description": "部件重叠的核心窗口；只比较归属通道与深度，不用颜色推断谁在前",
+        "kind": "box",
+        "x_end": 44,
+        "x_start": 36,
+        "y_end": 44,
+        "y_start": 36
+      },
+      "question": "当两个部件在同一深度相遇时，谁获得像素是颜色差异还是归属差异？数值后端改变累加顺序后归属是否漂移？",
+      "request": {
+        "height": 80,
+        "key": "coplanar-ownership",
+        "samples": 2,
+        "width": 80
+      },
+      "research_options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "research_pass_sha256": {
+        "color.png": "f04afa06a3cb709351c519a8a8b79d5e7729545ad8fdb6fe2b0ba40998ee9222",
+        "color.rgb": "ac887be325e8c954a6141a7df0c151e4a94a0def3e5753d2561b1fe778a2b16d",
+        "depth.f32": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+        "depth.png": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+        "object.png": "65b75c76ba7f60eda692350f3f2f59110bf7c2a37e4fd85793bb3b4e97d072ba",
+        "object.u32": "91c70f35c32dce0ceaee3895c94f8896062086f5eef6d21baa60787cd3fd805e"
+      },
+      "service_plate": {
+        "pass_sha256": {
+          "color.png": "44c3a23bb8571ce23e1a0760987ff06dc686cd8e251c79bb166da0043196eb22",
+          "color.rgb": "593ed95986fc0f5e875bc0ff62d77370040cfb2ebdec03856334204720864e46",
+          "depth.f32": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+          "depth.png": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+          "object.png": "5ae70366379221c6bc15de8e9f2c7d659afe46c36522f744ed291aee1af15c31",
+          "object.u32": "74bdbcf92217c507084b511aa3341208964be5a2e771242611a934005d00571c"
+        },
+        "plate_id": "plate_33cf20e0ca754937b3de0ff6a84f7072",
+        "seal_hash": "6e110d25db33cc0e4c9bbe8a50bc18177de1bf18c480db12fccdabc320409824",
+        "statistics": {
+          "background_depth": "positive_infinity",
+          "byte_order": "little",
+          "covered_pixels": 1600,
+          "depth_units": "camera_forward_distance",
+          "fragments": 6867,
+          "triangles": 4
+        },
+        "verification": {
+          "passes": {
+            "color.png": "44c3a23bb8571ce23e1a0760987ff06dc686cd8e251c79bb166da0043196eb22",
+            "color.rgb": "593ed95986fc0f5e875bc0ff62d77370040cfb2ebdec03856334204720864e46",
+            "depth.f32": "b2ffe9b3a9e7af4dbf4f51917eb1d73ebd16a3961f54425115ab169f1ea33a75",
+            "depth.png": "bf36ab1c0f7a98902e8bb0f6385e397640226d9ef0f42bca48cab061cd9e8e3f",
+            "object.png": "5ae70366379221c6bc15de8e9f2c7d659afe46c36522f744ed291aee1af15c31",
+            "object.u32": "74bdbcf92217c507084b511aa3341208964be5a2e771242611a934005d00571c"
+          },
+          "valid": true
+        },
+        "visual_hash": "b8f0d5c847e0fcaaa680844c68251bc8885873a9d70c5739062b7489bb411dd8"
+      },
+      "title": "Coplanar ownership / 近共面部件归属"
+    },
+    "edge-blend": {
+      "against_service": {
+        "both": 0,
+        "color_changed": 205,
+        "color_only": 205,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 0,
+        "depth_changed_finite": 0,
+        "ownership_changed": 0,
+        "ownership_only": 0,
+        "pixels": 5120
+      },
+      "arms": {
+        "average-edge-color": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "direct-edges": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "divide-barycentrics": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "narrow-tie-window": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "perspective-depth": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "reject-near-faces": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "research": {
+          "covered_pixels": 2668,
+          "fragments": 10488,
+          "triangles": 4
+        }
+      },
+      "input": "inputs/edge-blend.json",
+      "input_digest": "80d3a7e7434958d3616089821466a64fbb86d5028ba4e1da2b7b925f00165aa7",
+      "offline_reader": {
+        "summary": {
+          "background_pixels": 2452,
+          "covered_pixels": 2668,
+          "depth_units": "camera_forward_distance",
+          "finite_depth_range": [
+            5.75,
+            6.0
+          ],
+          "height": 64,
+          "object_id_scope": "local_to_this_plate",
+          "objects": 2,
+          "samples": 2,
+          "width": 80
+        },
+        "valid": true
+      },
+      "probe": {
+        "description": "横穿细件的最窄一侧（y 取细件中部，x 从背景经细件再回背景）",
+        "kind": "row",
+        "x_end": 50,
+        "x_start": 30,
+        "y": 32
+      },
+      "question": "当细件只覆盖像素内部分超采样点时，颜色通道的混色是否意味着物体通道也混用了归属？",
+      "request": {
+        "height": 64,
+        "key": "edge-blend",
+        "samples": 2,
+        "width": 80
+      },
+      "research_options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "research_pass_sha256": {
+        "color.png": "d1bccc7b5bcba2d9611a90657ed17e7cbeddc40034a3574454729b8515eff56f",
+        "color.rgb": "366e80aac6af27e60634115e38a96f09f682126cec847bc2ac54e9b779687210",
+        "depth.f32": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+        "depth.png": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+        "object.png": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+        "object.u32": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10"
+      },
+      "service_plate": {
+        "pass_sha256": {
+          "color.png": "f074633c037445a31531335ea1074e03e2ff840c3f10a1228e215c372ecec2fa",
+          "color.rgb": "5957051012973220d413ac51647f3aa673bfe34d6e5ad0772d2b258b040d38b9",
+          "depth.f32": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+          "depth.png": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+          "object.png": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+          "object.u32": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10"
+        },
+        "plate_id": "plate_6fddb597a1c1449e981cda2a9ef472ad",
+        "seal_hash": "40cdf3b33181ac458894a277f534653458192b75ef2304edd74133188b665cd9",
+        "statistics": {
+          "background_depth": "positive_infinity",
+          "byte_order": "little",
+          "covered_pixels": 2668,
+          "depth_units": "camera_forward_distance",
+          "fragments": 10488,
+          "triangles": 4
+        },
+        "verification": {
+          "passes": {
+            "color.png": "f074633c037445a31531335ea1074e03e2ff840c3f10a1228e215c372ecec2fa",
+            "color.rgb": "5957051012973220d413ac51647f3aa673bfe34d6e5ad0772d2b258b040d38b9",
+            "depth.f32": "826189f5213a987e58d8f970aee823d7bea0b4b93975111584dfdd90c997b9a0",
+            "depth.png": "f108e0e971aa9496994401e31c957fa9394b7a6124cb7333db8384b43f76db48",
+            "object.png": "195cd91dcaec583f3e747c3378909ae61081655082ae42fbf681aa8004c96283",
+            "object.u32": "6ae9c354e47880d9c3da51f5b82f104d310b819aa8ca4befc0754f1e37360e10"
+          },
+          "valid": true
+        },
+        "visual_hash": "2f8c775097b9708345262c1e261373be1fd969b5c8f06c44af5d4f171c58834d"
+      },
+      "title": "Thin part edge mixing / 细件边缘混色"
+    },
+    "perspective-clipping": {
+      "against_service": {
+        "both": 21,
+        "color_changed": 148,
+        "color_only": 127,
+        "coverage_gained": 0,
+        "coverage_lost": 0,
+        "depth_bit_differences": 3311,
+        "depth_changed_finite": 3311,
+        "ownership_changed": 21,
+        "ownership_only": 0,
+        "pixels": 6912
+      },
+      "arms": {
+        "average-edge-color": {
+          "covered_pixels": 4286,
+          "fragments": 17059,
+          "triangles": 6
+        },
+        "direct-edges": {
+          "covered_pixels": 4286,
+          "fragments": 17059,
+          "triangles": 6
+        },
+        "divide-barycentrics": {
+          "covered_pixels": 4286,
+          "fragments": 17059,
+          "triangles": 6
+        },
+        "narrow-tie-window": {
+          "covered_pixels": 4286,
+          "fragments": 17059,
+          "triangles": 6
+        },
+        "perspective-depth": {
+          "covered_pixels": 4286,
+          "fragments": 16976,
+          "triangles": 6
+        },
+        "reject-near-faces": {
+          "covered_pixels": 2220,
+          "fragments": 8430,
+          "triangles": 4
+        },
+        "research": {
+          "covered_pixels": 4286,
+          "fragments": 17059,
+          "triangles": 6
+        }
+      },
+      "input": "inputs/perspective-clipping.json",
+      "input_digest": "4848ae9802a67365df82262ffcd627fda9bd77ce9d4dac7fba1f67b2e8c94856",
+      "offline_reader": {
+        "summary": {
+          "background_pixels": 2626,
+          "covered_pixels": 4286,
+          "depth_units": "camera_forward_distance",
+          "finite_depth_range": [
+            1.084460973739624,
+            5.125402927398682
+          ],
+          "height": 72,
+          "object_id_scope": "local_to_this_plate",
+          "objects": 3,
+          "samples": 2,
+          "width": 96
+        },
+        "valid": true
+      },
+      "probe": {
+        "description": "刀片穿过近裁剪面附近的窗口；比较深度插值与归属，而不是只看颜色是否相同",
+        "kind": "box",
+        "x_end": 48,
+        "x_start": 0,
+        "y_end": 48,
+        "y_start": 24
+      },
+      "question": "三角形穿过近裁剪面或视锥侧面时，裁剪后插值是否仍给出正确的相机前向深度和部件归属？",
+      "request": {
+        "height": 72,
+        "key": "perspective-clipping",
+        "samples": 2,
+        "width": 96
+      },
+      "research_options": {
+        "bary": "reciprocal",
+        "depth_interp": "screen_linear",
+        "edge_color": "nearest",
+        "edge_eval": "incremental",
+        "near_crossing": "clip",
+        "tie_window": 4e-09
+      },
+      "research_pass_sha256": {
+        "color.png": "a6644ce8ca39e16436ff98300bf10455096077fb574142d30d1dc817daf221f1",
+        "color.rgb": "c6c355b4c93908ce201137c7eb34e0826bef5007eea785302e19b9afcdbf1f00",
+        "depth.f32": "43c73440ad283d2e24952f8f986dbf4c8025d879b8a36968e3825b4b8b355d79",
+        "depth.png": "7bee88f908cec3edb08b42b9ba851edb341cad790f2a02eedd99de39f38a3a8b",
+        "object.png": "fa231732e7adf07fd3265a732c09170843946064b16b5012e09578c1e402f3a8",
+        "object.u32": "2020c078d9dcabe09b040fad5191f569be4b2024d145a7ed368beecd91dc775c"
+      },
+      "service_plate": {
+        "pass_sha256": {
+          "color.png": "f66c28ed50d6498dce1cbd7e10debe0c482d3e452ac431dce22efa7e84867c55",
+          "color.rgb": "95ab239a0f2fb13399be05c7486d92ac76e958378d8e5a53c9786efdb579684a",
+          "depth.f32": "deff07f2f4d02e65d25084733971d7705940014a788524e0859438b44a1e2159",
+          "depth.png": "00c06f7133b3d68ffe3415e3a169da251ef06ccd8960e7c92a435eb6efaedfd1",
+          "object.png": "fdc0f370655b1f9fed63f5e23f4d901859529173b3ea00f79a5960c7a64c4730",
+          "object.u32": "61d0ef6fc7e57b92def1e3a4d3b3f98fb171cc7fda8c06716682535d3828cb5f"
+        },
+        "plate_id": "plate_04810879813445f9b5fbec31977d8114",
+        "seal_hash": "70d97f4321364e66d1d958a5e14b9c14ddaed564501665cebbf06c81af508b02",
+        "statistics": {
+          "background_depth": "positive_infinity",
+          "byte_order": "little",
+          "covered_pixels": 4286,
+          "depth_units": "camera_forward_distance",
+          "fragments": 16976,
+          "triangles": 6
+        },
+        "verification": {
+          "passes": {
+            "color.png": "f66c28ed50d6498dce1cbd7e10debe0c482d3e452ac431dce22efa7e84867c55",
+            "color.rgb": "95ab239a0f2fb13399be05c7486d92ac76e958378d8e5a53c9786efdb579684a",
+            "depth.f32": "deff07f2f4d02e65d25084733971d7705940014a788524e0859438b44a1e2159",
+            "depth.png": "00c06f7133b3d68ffe3415e3a169da251ef06ccd8960e7c92a435eb6efaedfd1",
+            "object.png": "fdc0f370655b1f9fed63f5e23f4d901859529173b3ea00f79a5960c7a64c4730",
+            "object.u32": "61d0ef6fc7e57b92def1e3a4d3b3f98fb171cc7fda8c06716682535d3828cb5f"
+          },
+          "valid": true
+        },
+        "visual_hash": "4e49e749aa3895ab07daffcfdaad83398cd520d2e09f2277a05e2007f33c93d6"
+      },
+      "title": "Perspective clipping / 透视裁剪"
+    }
+  },
+  "support": {
+    "facetproof/__init__.py": "1fd2dafad56f37dc658a97eda4d94fbd5f2c2cc3bf5228fa207fa5f8b7f5a0b9",
+    "facetproof/algebra.py": "e508769f77093a2016c6523a7ca050c4a767e4bbec7cc352fd755b8f567d473b",
+    "facetproof/camera.py": "28efdd7934011e90b2d133d43577841f7e14680190a1f1088418174b58a91bbf",
+    "facetproof/clipping.py": "c9f5c1a248766678f029295f94169f44f765f5c2a31fee33b339e3a9cb29c9b1",
+    "facetproof/errors.py": "7cff3fc4241d979cfe1c0f5546f6290890c4df2896edae8b701bcfc7913760d5",
+    "facetproof/illumination.py": "61bfd61e6e3cdb2b4cef08be9673a02cd84eb3108a6c5394d54c6be390126ab4",
+    "facetproof/passes.py": "ece71e23fb2ae491543a2e6c17e2a1a01ecb52c8b63e41e70b4d97ad8e6b75ea",
+    "facetproof/pigments.py": "32a7819386618d05923a522c2900d19ab566dc2c9bdc78a32e3ae13b4ad1f921",
+    "facetproof/planner.py": "776e3c5427a1c5160f7fb6fcaa6bb1a23a9a02c058b20d8afed706e34aceb3ad",
+    "facetproof/png.py": "49cfe9affee3eac83a8f70b4993e96595f66eee48fe8150c4126968e1bba5504",
+    "facetproof/raster.py": "40653605dfcae0a312bb27f2b884d59c54c475257bf92e686ecb666a3eb13a45",
+    "facetproof/shading.py": "fd3719506f419955e9824987710ff5815e58eef654e3596e2cb4ee6631e291f2",
+    "facetproof/tile_protocol.py": "3f6f5c178aadde406b10fe194449d7920bb53b13d54ea99603c6a192411d0834",
+    "facetproof/tile_renderer.py": "eaa0a99699a60e3c9d675ea74713cd0cfe8cbcec3b860142f747223b0018b180",
+    "facetproof/values.py": "bca977560b425ee2ed01f5adde3a30b6ed9ccdb7340ca036394d148dc2d5e943",
+    "facetproof/worker.py": "0c0fc16539858f1bbf6e3afc669eb2f5829d9e0cd09652fc8c3bcfa6d2783c0e",
+    "harness/compare.py": "99dc5fe2b80fecb8fd1e315e3bddc7ceacc5f32018ed6bb0ba430ca8eb5a2fbc",
+    "harness/font.py": "177859808401191c8086c6c8d9d483c4716104dd3fda3be4350e76f953ec38ac",
+    "harness/job.py": "2bbca6aa2ad5638682ce5659cf3427079a7f16ce1c9656607a17fae5c6628b9a",
+    "harness/keyorder.py": "484b8bbc8d3557c896852b7899756aa6a6846b7ea1e5e4c9a3d99a1654d37973",
+    "harness/oracle.py": "839309335de0224a628b6d58dc8bf116fb1d4834fa6a2ea3a9d717442eb12b4b",
+    "harness/pngdiff.py": "349cd34d33a41633e2afea4f7b5277954ab6a93483d63f294dd1e9789194d0bd",
+    "harness/scenario.py": "f54763a5921d2afb602c85f68d01e86047c247a9f00c989ed8ca37803cf1d754",
+    "harness/sheet.py": "9c2ffcb3220d8644dfbf61234c2484e027083da58c8b54ee06770e110f98ddb4",
+    "harness/variant.py": "679ce59828dbdae7d25e63efaebd740c1b518369fefa6f01b87e8cec3af42e37"
+  },
+  "tools": {
+    "harness/build.py": "686b46292839f880de975642e24e23c4099bebc3f3e148b7a55efba2e4a32200",
+    "harness/drift.py": "2636d413d3f0ca1afda74ed34cc6d935b14f594209284e387b3dc2ec8087f4e4",
+    "harness/verify.py": "73f40262e943f72b47d118677ca003be78cd3dd1966f3baa690333eda82ce47a"
+  }
+}
